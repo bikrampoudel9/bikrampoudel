@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/responsive800.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script rel="javascript" type="text/javascript" src="script.js" defer></script>
+    <script rel="javascript" type="text/javascript" src="https://smtpjs.com/v3/smtp.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -33,7 +34,7 @@
         </div>
     </nav>
     <!-- Home section -->
-    <section class="hide">
+    <section class="">
         <div class="row">
             <div class="home-img">
                 <img src="./images/photo.jpg">
@@ -56,7 +57,7 @@
     <!-- About me Section -->
 
     <section class="about-me-sec">
-        <div class="about-me">
+        <div class="about-me sec-head">
             <H1>ABOUT <span>ME</span></H1>
         </div>
         <div class = "personal-infos">
@@ -217,19 +218,81 @@
                             <li><span class="title"><i class="fa fa-external-link icon"></i>Demo:</span><span class="value link"><a href="" id="pro-demo" target="_blank" rel="noopener noreferrer">Demo</a></span></li>
                         </ul>
                     </div>
-                    <div class="project-img">
-                        <img src="./images/collegefinder.jpg">
+                    <div class="project-img" >
+                        <img id="project-img">
                     </div>
     
                 </div>
             </div>
         </div>
-        
-        
-        
-        
-
+        <hr class="seperater">   
     </section>
+
+    <!-- contact section -->
+    <section class="contact-sec">
+        <div class="uppercase sec-head">
+            <H1>Contact<span>Me</span></H1>
+        </div>
+        <div class="row">
+            <div class="contact-info flex-40">
+                <h4 class="uppercase">get in touch</h4>
+                <p>
+                    You can contact my at any time.  
+                </p>
+                <div class="row">
+                    <i class="fa fa-user icon"></i>
+                    <div class="info column">
+                        <div class="title uppercase">Name</div>
+                        <div class="sub-title">Bikram Poudel</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <i class="fa fa-phone icon"></i>
+                    <div class="info column">
+                        <div class="title uppercase">Call ME</div>
+                        <div class="sub-title">+9779824342325</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <i class="fa fa-envelope icon"></i>
+                    <div class="info column">
+                        <div class="title uppercase">Mail me</div>
+                        <div class="sub-title">bikrampoudel9@gmail.com</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="" class="socialmedia"><i class="fa fa-facebook icon"></i></a>
+                    <a href="" class="socialmedia"><i class="fa fa-instagram icon"></i></a>
+                    <a href="" class="socialmedia"><i class="fa fa-linkedin icon"></i></a>
+                    <a href="" class="socialmedia"><i class="fa fa-github icon"></i></a> 
+                </div>
+            </div>
+            <div class="mail flex-60">
+                <form>
+                    <div class="fields">
+                        <div class="field">
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="field">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                    </div>
+                    <div class="textarea">
+                        <textarea cols="70" rows="15" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Send Mail</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        
+    </section>
+    <hr class="seperater">
 </body>
 
 </html>

@@ -106,7 +106,7 @@ var projectList = [
     },
     {
         project : "Hotel Rating System",
-        imgSrc : "./images/collegefinder.jpg",
+        imgSrc : "./images/12345.jpg",
         codeLink : "https://github.com/bikrampoudel9/hotel_rating_system.git",
         language : "C#",
         demoLink : ""
@@ -117,6 +117,13 @@ var projectList = [
         codeLink : "https://github.com/bikrampoudel9/stock_management_system",
         language : "C#, ASP.NET",
         demoLink : ""
+    },
+    {
+        project : "Personal Portfolio",
+        imgSrc : "./images/collegefinder.jpg",
+        codeLink : "",
+        language : "Html,Css,Javascript",
+        demoLink : ""
     }
 ];
 
@@ -126,6 +133,8 @@ var proName = document.getElementById("pofo-pro-nm");
 var proCode = document.getElementById("pro-code");
 var proLang = document.getElementById("lang");
 var proDemo = document.getElementById("pro-demo");
+var proImg = document.getElementById("project-img");
+
 
 function addPortfolio(project,imgSrc,codeLink,language,demoLink){
     let projectBox = document.createElement("div");
@@ -145,6 +154,7 @@ function addPortfolio(project,imgSrc,codeLink,language,demoLink){
         proCode.href=codeLink;
         proLang.innerText=language;
         proDemo.href=demoLink;
+        proImg.src=imgSrc;
         popup.style.visibility ="visible";
         
     })
@@ -157,6 +167,20 @@ projectList.forEach((portfolio)=>{
         );
 });
 
+
+function sendMail(){
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "bikrampoudel9",
+        Password : "",
+        To : 'them@website.com',
+        From : "you@isp.com",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+}
     
     
 
