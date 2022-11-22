@@ -15,6 +15,7 @@
     font-family:'Poppins',sans-serif;
     
 }
+
 .icon{
     color: var(--purple);
     margin:5px;
@@ -715,6 +716,9 @@ span.span-name{
     height: 50px;
     width: 50px;
     display: flex;
-               
+    align-items: center;
+    justify-content: center;
+                  
 }
+
 

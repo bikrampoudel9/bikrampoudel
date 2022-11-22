@@ -169,16 +169,19 @@ projectList.forEach((portfolio)=>{
 
 
 function sendMail(){
+    
+    var mailto = "bikrampoudel9@gmail.com";
+    var mailFrom = document.getElementById("mailFrom").value;
+    var subject = document.getElementById("mailsubject").value;
+    var mailMessage = document.getElementById("mailmessage").value;
     Email.send({
-        Host : "smtp.gmail.com",
-        Username : "bikrampoudel9",
-        Password : "",
-        To : 'them@website.com',
-        From : "you@isp.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
+        SecureToken :"1d19b8a6-15c8-4b77-bebb-d702263bf42f",
+        To : mailto,
+        From : mailFrom,
+        Subject : subject,
+        Body : mailMessage,
     }).then(
-      message => alert(message)
+      message => alert("Mail Successfully send")
     );
 }
     

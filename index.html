@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/responsive800.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script rel="javascript" type="text/javascript" src="script.js" defer></script>
-    <script rel="javascript" type="text/javascript" src="https://smtpjs.com/v3/smtp.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -23,18 +23,18 @@
             </div>
         </div>
         <ul id = "drawer">
-            <li><a href="#"><i class="fa fa-home" id="menuicons"></i>Home</a></li>
-            <li><a href="#"><i class="fa fa-user" id="menuicons"></i>About Me</a></li>
+            <li><a href="#home"><i class="fa fa-home" id="menuicons"></i>Home</a></li>
+            <li><a href="#about-me-sec"><i class="fa fa-user" id="menuicons"></i>About Me</a></li>
             <li><a href="#"><i class="fa fa-file" id="menuicons"></i>Resume</a></li>
-            <li><a href="#"><i class="fa fa-briefcase" id="menuicons"></i>My Portfolio</a></li>
-            <li><a href="#"><i class="fa fa-paper-plane" id="menuicons"></i>Contact</a></li>
+            <li><a href="#portfolio-sec"><i class="fa fa-briefcase" id="menuicons"></i>My Portfolio</a></li>
+            <li><a href="#contact-sec"><i class="fa fa-paper-plane" id="menuicons"></i>Contact</a></li>
         </ul>
         <div class="menu">
             <i class="fa fa-navicon" id="menu-icon" style="font-size:20px; color:rgb(111, 106, 214);"></i>
         </div>
     </nav>
     <!-- Home section -->
-    <section class="">
+    <section id="home">
         <div class="row">
             <div class="home-img">
                 <img src="./images/photo.jpg">
@@ -56,7 +56,7 @@
 
     <!-- About me Section -->
 
-    <section class="about-me-sec">
+    <section class="about-me-sec" id="about-me-sec">
         <div class="about-me sec-head">
             <H1>ABOUT <span>ME</span></H1>
         </div>
@@ -83,10 +83,10 @@
                     </div>
                 </div>
                 <div class="flex-100 cv-links">
-                    <a id="resume-link">My Resume</a>
-                    <a id="downloadcv-link">Download CV</a>
+                    <a href="./CV/Bikram Poudel.pdf"  id="resume-link" target="_blank">My Resume</a>
+                    <a href="./CV/Bikram Poudel.pdf"  download="Bikram Poudel.pdf" target="_blank">Download CV</a>
                     <!-- <button class="btn">More about me <i class="fa fa-user" id="btn-icon"></i></button>
-                    <button class="btn">More about me <i class="fa fa-user" id="btn-icon"></i></button> -->
+                    <button class="btn">More about me <i class="fa fa-user" id="btn-icon"></i></button> id="downloadcv-link"-->
                 </div>
             </div>
             <div class="awards flex-50 ">
@@ -191,7 +191,7 @@
     </section>
 
     <!-- portfolio section -->
-    <section class="portfolio-sec">
+    <section class="portfolio-sec" id="portfolio-sec">
         <div class="uppercase sec-head">
             <H1>My<span>Portfolio</span></H1>
         </div>
@@ -229,7 +229,7 @@
     </section>
 
     <!-- contact section -->
-    <section class="contact-sec">
+    <section class="contact-sec" id="contact-sec">
         <div class="uppercase sec-head">
             <H1>Contact<span>Me</span></H1>
         </div>
@@ -261,28 +261,37 @@
                     </div>
                 </div>
                 <div class="row">
-                    <a href="" class="socialmedia"><i class="fa fa-facebook icon"></i></a>
-                    <a href="" class="socialmedia"><i class="fa fa-instagram icon"></i></a>
-                    <a href="" class="socialmedia"><i class="fa fa-linkedin icon"></i></a>
-                    <a href="" class="socialmedia"><i class="fa fa-github icon"></i></a> 
+                    <div class="socialmedia">
+                        <a href="https://www.facebook.com/bikram.poudel.739" target="_blank" ><i class="fa fa-facebook icon"></i></a>
+                    </div>
+                    <div class="socialmedia">
+                        <a href="https://www.instagram.com/bikram__poudel/" target="_blank"><i class="fa fa-instagram icon"></i></a>
+                    </div>
+                    <div class="socialmedia">
+                        <a href="https://www.linkedin.com/in/bikram-poudel-853b431b1/" target="_blank"><i class="fa fa-linkedin icon"></i></a>
+                    </div>
+                    <div class="socialmedia">
+                        <a href="https://github.com/bikrampoudel9" target="_blank"><i class="fa fa-github icon" ></i></a>
+                    </div> 
                 </div>
             </div>
             <div class="mail flex-60">
-                <form>
+                <form onsubmit="sendMail(); return false;">
                     <div class="fields">
                         <div class="field">
-                            <input type="text" placeholder="Name" required>
+                            <input type="text" id="name" placeholder="Name" required>
                         </div>
                         <div class="field">
-                            <input type="email" placeholder="Email" required>
+                            <input type="email" id="mailFrom" placeholder="Email" required>
                         </div>
                         <div class="field">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" id="mailsubject" placeholder="Subject" required>
                         </div>
                     </div>
                     <div class="textarea">
-                        <textarea cols="70" rows="15" placeholder="Message" required></textarea>
+                        <textarea cols="70" rows="15" id="mailmessage" placeholder="Message" required></textarea>
                     </div>
+                    <!-- <button type="submit" id="submitBtn">Send Mail</button> -->
                     <div class="button">
                         <button type="submit">Send Mail</button>
                     </div>
