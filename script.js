@@ -66,7 +66,7 @@ var skillDetails={
     "PHP":40,
     "JAVASCRIPT":60,
     "REACT":80,
-    "DJANGO":30
+    "DJANGO":60
 
 }
 for(let key in skillDetails){
