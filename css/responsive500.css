@@ -1,0 +1,44 @@
+@media (max-width:500px){
+
+    .home-img img{
+        min-height: 150px;
+        min-width: 150px;
+        border-radius: 75px;
+        height: 150px;
+    }
+    .home-img{
+        height: 150px;
+        margin-bottom: 30px;
+    }
+    .home-intro h1{
+        font-size: 25px;
+    }
+    .home-intro p{
+        font-size: 12px;
+    }
+    .logo-img{
+        height:40px;
+        width: 40px;
+        border-radius: 35px;
+    }
+    .title-name h2{
+        font-size: 18px;
+    }
+    .title-name h3{
+        font-size: 12px;
+    }
+    .personal-infos{
+        padding-left: 5px;
+    }
+    .personal-skills .skills{
+        column-gap: 50px;
+        padding-inline: 0;
+    }
+    .popup .project-detail{
+        width: 95%;
+        /* position: absolute; */
+        transform: translate(2.5%,30%);
+        
+    }
+
+}

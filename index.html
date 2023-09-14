@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/responsive500.css"/>
+    <link rel="stylesheet" href="./css/responsive800.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script rel="javascript" type="text/javascript" src="script.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="./images/photo.jpg" class="logo-img">
+            <div class="title-name">
+                <h2>Bikram</h2>
+                <h3>Poudel</h3>
+            </div>
+        </div>
+        <ul id = "drawer">
+            <li><a href="#home"><i class="fa fa-home" id="menuicons"></i>Home</a></li>
+            <li><a href="#about-me-sec"><i class="fa fa-user" id="menuicons"></i>About Me</a></li>
+            <li><a href="#"><i class="fa fa-file" id="menuicons"></i>Resume</a></li>
+            <li><a href="#portfolio-sec"><i class="fa fa-briefcase" id="menuicons"></i>My Portfolio</a></li>
+            <li><a href="#contact-sec"><i class="fa fa-paper-plane" id="menuicons"></i>Contact</a></li>
+        </ul>
+        <div class="menu">
+            <i class="fa fa-navicon" id="menu-icon" style="font-size:20px; color:rgb(111, 106, 214);"></i>
+        </div>
+    </nav>
+    <!-- Home section -->
+    <section id="home">
+        <div class="row">
+            <div class="home-img">
+                <img src="./images/photo.jpg">
+            </div>
+            <div class="home-intro">
+                <h3>नमस्ते !</h3>
+                <h1>I AM <span class="span-name">BIKRAM POUDEL</span></h1>
+                <p>
+                    An IT enthusiast, Lecturer at Itahari International College and a
+                    graduate of London Metropoliton University in BSc(hons) Computing
+                    with experience and extensive education in software design and
+                    application development. I am highly interested in learning and implementing
+                    new techonologies and developing applications for the benefit of the people.
+                </p>
+                <button class="btn">More about me <i class="fa fa-user" id="btn-icon"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About me Section -->
+
+    <section class="about-me-sec" id="about-me-sec">
+        <div class="about-me sec-head">
+            <H1>ABOUT <span>ME</span></H1>
+        </div>
+        <div class = "personal-infos">
+            <div class="flex-100">
+                <h2>Personal Info</h2>
+            </div>
+            <div class="personal-details flex-50">
+                <div class="personal-titles">
+                    <div class="flex-50 ">
+                        <ul>
+                            <li><span class="title">First Name:</span><span class="sub-title">Bikram</span></li>
+                            <li><span class="title">Last Name:</span><span class="sub-title">Poudel</span></li>
+                            <li><span class="title">Nationality:</span><span class="sub-title">Nepalese</span></li>
+                            <li><span class="title">Email:</span><span class="sub-title">bikrampoudel9@gmail.com</span></li>
+                        </ul>
+                    </div>
+                    <div class="flex-50">
+                        <ul>
+                            <li><span class="title">Address:</span><span class="sub-title">Morang</span></li>
+                            <li><span class="title">Contact:</span><span class="sub-title">9824342325</span></li>
+                            <li><span class="title">Freelance:</span><span class="sub-title">Available</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex-100 cv-links">
+                    <a href="./CV/Bikram Poudel.pdf"  id="resume-link" target="_blank">My Resume</a>
+                    <a href="./CV/Bikram Poudel.pdf"  download="Bikram Poudel.pdf" target="_blank">Download CV</a>
+                    <!-- <button class="btn">More about me <i class="fa fa-user" id="btn-icon"></i></button>
+                    <button class="btn">More about me <i class="fa fa-user" id="btn-icon"></i></button> id="downloadcv-link"-->
+                </div>
+            </div>
+            <div class="awards flex-50 ">
+                <div class="box flex-40">
+                    <H2>3</H2>
+                    <p class="uppercase">Years of experience</p>
+                </div>
+                <div class="box flex-40">
+                    <H2>20</H2>
+                    <p class="uppercase">Completed Projects</p>
+                </div>
+                <div class="box flex-40">
+                    <H2>20</H2>
+                    <p class="uppercase">Happy Customers</p>
+                </div>
+                <div class="box flex-40">
+                    <H2>10</H2>
+                    <p class="uppercase">Awards Won</p>
+                </div>
+            </div>
+        </div>
+
+        <hr class="seperater">
+
+        <div class="personal-skills">
+            <div class="heading">
+                <H1 class="uppercase">My Skills</H1>
+            </div>
+            <div class="skills">
+                <!-- <div class="box">
+                    <div class="circular-progress">
+                        <svg>
+                            <circle r="60" cx="65" cy="65" class="outer-circle"/>
+                            <circle stroke-dashoffset="70" r="60" cx="65" cy="65" class="inner-circle"/>
+                        </svg>
+                        <div class="percent">
+                            <h2>70<span>%</span></h2>
+                        </div>
+                    </div>
+                    <div class="language">
+                        <h2>HTML</h2>
+                    </div> 
+                </div> -->            
+            </div>
+            <hr class="seperater">
+            <div class="qualification">
+                <div class="heading">
+                    <H1 class="uppercase">Qualification</H1>
+                </div>
+                <div class="qualification-box">
+                    <div class="resume-box">
+                        <h1><i class="fa fa-briefcase"></i><span class="uppercase">experience</span></h1>
+                        <div class="box"> 
+                            <h6 class="uppercase experience-date-address"><i class="fa fa-calendar"></i> 2021 - Jun 2021 / Kathmandu, Nepal</h6>
+                            <h5 class="uppercase company-name">Samadhan Engineering</h5>
+                            <p>
+                                I did my first internship at Samadhan Engineering on IoT and android application.
+                                I worked there for 60 days. Internship at Samadhan Engineering helped me to know about
+                                MQTT server and how to build an android application. 
+                            </p>
+                        </div>
+                        <div class="box"> 
+                            <h6 class="uppercase experience-date-address"><i class="fa fa-calendar"></i> 2021 - Jun 2021 / Itahari, Nepal</h6>
+                            <h5 class="uppercase company-name">Ithari International College</h5>
+                            <p>
+                                At Itahari International College, I starting working there as a tutor for undergraduate students.
+                                I applied my academic knowledge to teach students about java programming language and helped them
+                                to solve real world problems through the concepts of Information Techonologies and programming language.
+                            </p>
+                        </div>  
+                    </div>
+                    <div class="education-box">
+                        <h1><i class="fa fa-graduation-cap"></i><span class="uppercase">Education</span></h1>
+                        <div class="box"> 
+                            <h6 class="uppercase experience-date-address"><i class="fa fa-calendar"></i> 2021 - Jun 2021 / Kathmandu, Nepal</h6>
+                            <h5 class="uppercase company-name">Susma Godawari</h5>
+                            <p>
+                                I completed my high school from Susma Godawari College scoring 'A' grade. I learned about Physics,
+                                Chemistry, Biology, Mathematics and more about chemical, phyical and biological experiments.
+                            </p>
+                        </div>
+                        <div class="box"> 
+                            <h6 class="uppercase experience-date-address"><i class="fa fa-calendar"></i> 2021 - Jun 2021 / Itahari, Nepal</h6>
+                            <h5 class="uppercase company-name">Ithari International College</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet. Vel vitae doloribus 
+                                aut optio qui necessitatibus recusandae hic architecto
+                                quos ut eaque quas veritatis adipisci. Qui voluptatum
+                                galisum ut esse quia est consequatur pariatur aut aperia
+                            </p>
+                        </div>  
+                    </div>
+                </div>
+
+            </div>
+            <hr class="seperater">   
+        </div>
+    </section>
+
+    <!-- portfolio section -->
+    <section class="portfolio-sec" id="portfolio-sec">
+        <div class="uppercase sec-head">
+            <H1>My<span>Portfolio</span></H1>
+        </div>
+        <div>
+            <div class="portfolios" id="portfolios">
+                <!-- <div class="box">
+                    <img src="./images/collegefinder.jpg">
+                    <div class="portfolio-title">
+                        <h5>College Finder</h5>
+                    </div>
+                </div> -->
+            </div>
+            <div class="popup" id="popup">
+                <div class="close" id="popup-close">
+                    <i class="fa fa-close"></i>
+                </div>
+                <div class="project-detail">
+                    <h3 class="heading uppercase" id="pro-heading">College Finder</h3>
+                    <div>
+                        <ul>
+                            <li><span class="title"><i class="fa fa-file-text icon"></i>Project:</span><span class="value" id="pofo-pro-nm">College Finder</span></li>
+                            <li><span class="title"><i class="fa fa-github icon"></i>Code:</span><span class="value link"><a href="" id="pro-code" target="_blank" rel="noopener noreferrer">Code</a></span></li>
+                            <li><span class="title"><i class="fa fa-code icon"></i>Language:</span><span class="value" id="lang">Java</span></li>
+                            <li><span class="title"><i class="fa fa-external-link icon"></i>Demo:</span><span class="value link"><a href="" id="pro-demo" target="_blank" rel="noopener noreferrer">Demo</a></span></li>
+                        </ul>
+                    </div>
+                    <div class="project-img" >
+                        <img id="project-img">
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <hr class="seperater">   
+    </section>
+
+    <!-- contact section -->
+    <section class="contact-sec" id="contact-sec">
+        <div class="uppercase sec-head">
+            <H1>Contact<span>Me</span></H1>
+        </div>
+        <div class="row">
+            <div class="contact-info flex-40">
+                <h4 class="uppercase">get in touch</h4>
+                <p>
+                    You can contact my at any time.  
+                </p>
+                <div class="row">
+                    <i class="fa fa-user icon"></i>
+                    <div class="info column">
+                        <div class="title uppercase">Name</div>
+                        <div class="sub-title">Bikram Poudel</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <i class="fa fa-phone icon"></i>
+                    <div class="info column">
+                        <div class="title uppercase">Call ME</div>
+                        <div class="sub-title">+9779824342325</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <i class="fa fa-envelope icon"></i>
+                    <div class="info column">
+                        <div class="title uppercase">Mail me</div>
+                        <div class="sub-title">bikrampoudel9@gmail.com</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="socialmedia">
+                        <a href="https://www.facebook.com/bikram.poudel.739" target="_blank" ><i class="fa fa-facebook icon"></i></a>
+                    </div>
+                    <div class="socialmedia">
+                        <a href="https://www.instagram.com/bikram__poudel/" target="_blank"><i class="fa fa-instagram icon"></i></a>
+                    </div>
+                    <div class="socialmedia">
+                        <a href="https://www.linkedin.com/in/bikram-poudel-853b431b1/" target="_blank"><i class="fa fa-linkedin icon"></i></a>
+                    </div>
+                    <div class="socialmedia">
+                        <a href="https://github.com/bikrampoudel9" target="_blank"><i class="fa fa-github icon" ></i></a>
+                    </div> 
+                </div>
+            </div>
+            <div class="mail flex-60">
+                <form onsubmit="sendMail(); return false;">
+                    <div class="fields">
+                        <div class="field">
+                            <input type="text" id="name" placeholder="Name" required>
+                        </div>
+                        <div class="field">
+                            <input type="email" id="mailFrom" placeholder="Email" required>
+                        </div>
+                        <div class="field">
+                            <input type="text" id="mailsubject" placeholder="Subject" required>
+                        </div>
+                    </div>
+                    <div class="textarea">
+                        <textarea cols="70" rows="15" id="mailmessage" placeholder="Message" required></textarea>
+                    </div>
+                    <!-- <button type="submit" id="submitBtn">Send Mail</button> -->
+                    <div class="button">
+                        <button type="submit">Send Mail</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        
+    </section>
+    <hr class="seperater">
+</body>
+
+</html>
