@@ -13,7 +13,7 @@
     text-decoration: none;
     /* font-family: Verdana; */
     font-family:'Poppins',sans-serif;
-    
+
 }
 
 .icon{
@@ -349,7 +349,7 @@ span.span-name{
     max-width: 70%;
     margin: 72px auto 50px;
     border: 1px solid var(--hr);
-    
+
 }
 
 /*--------------- Skills--------------------- */
@@ -485,7 +485,7 @@ span.span-name{
 }
 .resume-box, .education-box{
     border-radius: 5px;
-    box-shadow: 0px 0px 15px rgba(0,0,0,.25);              
+    box-shadow: 0px 0px 15px rgba(0,0,0,.25);
 }
 
 /* ------------Portfolio section ----*/
@@ -507,7 +507,7 @@ span.span-name{
     position: relative;
     cursor: pointer;
     border:3px solid var(--reddish-grey);
-    
+
 }
 .box img{
     position:absolute;
@@ -516,7 +516,7 @@ span.span-name{
     height: 100%;
     width: 100%;
     /* border-radius: 5px; */
-    
+
 }
 /* .portfolio-1{
     background-image: url('../images/collegefinder.jpg');
@@ -545,7 +545,7 @@ span.span-name{
 .portfolios .box:hover > .portfolio-title{
     visibility: visible;
     background-position: left;
-    
+
 }
 /* .portfolio-title:hover{
     background-color: rgb(8, 8, 8);
@@ -609,7 +609,7 @@ span.span-name{
     height: 250px;
     width: auto;
     border-radius: 5px;
-    
+
 }
 .project-img img{
     position: absolute;
@@ -678,7 +678,7 @@ span.span-name{
     border: 1px solid lightgray;
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
-} 
+}
 .contact-sec form .textarea{
     margin-top: 10px;
     padding-top: 10px;
@@ -702,7 +702,7 @@ span.span-name{
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     transition: all 0.3s ease;
-    
+
 }
 .contact-sec form .button button:hover{
     background: none;
@@ -718,7 +718,7 @@ span.span-name{
     display: flex;
     align-items: center;
     justify-content: center;
-                  
+
 }
 
 

@@ -55,7 +55,7 @@ function createElement(language,percentage){
     languageTitle.innerHTML="<h2>"+language+"</h2>"
     box.appendChild(languageTitle)
     skills.appendChild(box);
-  
+
 }
 var skillDetails={
     "HTML":70,
@@ -106,7 +106,7 @@ var projectList = [
     },
     {
         project : "Hotel Rating System",
-        imgSrc : "./images/12345.jpg",
+        imgSrc : "./images/hotelrating.png",
         codeLink : "https://github.com/bikrampoudel9/hotel_rating_system.git",
         language : "C#",
         demoLink : ""
@@ -156,7 +156,7 @@ function addPortfolio(project,imgSrc,codeLink,language,demoLink){
         proDemo.href=demoLink;
         proImg.src=imgSrc;
         popup.style.visibility ="visible";
-        
+
     })
     portfolios.appendChild(projectBox);
 }
@@ -169,7 +169,7 @@ projectList.forEach((portfolio)=>{
 
 
 function sendMail(){
-    
+
     var mailto = "bikrampoudel9@gmail.com";
     var mailFrom = document.getElementById("mailFrom").value;
     var subject = document.getElementById("mailsubject").value;
@@ -184,6 +184,6 @@ function sendMail(){
       message => alert("Mail Successfully send")
     );
 }
-    
-    
+
+
 
